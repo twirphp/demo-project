@@ -3,6 +3,7 @@
 ## Usage
 
 ```bash
+composer install
 docker-compose up -d
 docker-compose logs client
 ```
