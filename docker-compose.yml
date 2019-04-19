@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+    server:
+        image: php:7.3-alpine
+        command: php -S 0.0.0.0:8080 server.php
+        volumes:
+            - ./:/app
+        working_dir: /app
+
+    client:
+        image: php:7.3-alpine
+        command: php client.php http://server:8080
+        volumes:
+            - ./:/app
+        working_dir: /app

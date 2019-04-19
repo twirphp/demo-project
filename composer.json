@@ -1,0 +1,29 @@
+{
+    "name": "twirphp/demo",
+    "description": "TwirPHP demo project",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["twirp", "rpc", "framework", "idl", "protobuf"],
+    "homepage": "https://twirphp.readthedocs.io",
+    "authors": [
+        {
+            "name": "Márk Sági-Kazár",
+            "email": "mark.sagikazar@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Twirp\\Demo\\": "src/",
+            "": ["generated/"]
+        }
+    },
+    "require": {
+        "google/protobuf": "^3.7",
+        "http-interop/http-factory-guzzle": "^1.0",
+        "php-http/guzzle6-adapter": "^2.0",
+        "twirp/twirp": "^0.5.1"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
